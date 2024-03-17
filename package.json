@@ -1,5 +1,5 @@
 {
-  "name": "starter-crud-auth-api-express",
+  "name": "admin-template",
   "version": "1.0.0",
   "engines": {
     "node": "14.x"
@@ -33,10 +33,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/idurar/starter-antd-admin-crud-auth-mern.git"
+    "url": "git+https://github.com/Yogesh1807/admin-template"
   },
-  "bugs": {
-    "url": "https://github.com/idurar/starter-antd-admin-crud-auth-mern/issues"
-  },
-  "homepage": "https://github.com/idurar/starter-antd-admin-crud-auth-mern#readme"
+  "homepage": "https://github.com/Yogesh1807/admin-template#readme"
 }
