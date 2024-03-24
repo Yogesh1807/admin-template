@@ -1,4 +1,4 @@
-## App Built on top of this Starter project [IDURAR ERP/CRM](https://github.com/idurar/erp-crm)
+## App Built on top of this Starter project [ADMIN-TEMPLATE CRM](https://github.com/Yogesh1807/admin-template)
 Admin-template is Open Source CRM Based on Mern Stack (Node.js / Express.js / MongoDb / React.js ) with Ant Design (AntD) and Redux
 GitHub Repository : [https://github.com/Yogesh1807/admin-template](https://github.com/Yogesh1807/admin-template/)
 
@@ -14,10 +14,6 @@ Admin-template is Open Source CRM Based on Mern Stack (Node.js / Express.js / Mo
 ```
 Don't forget please to ⭐ this repo if you like this Starter Antd Admin!
 ```
-
-## Our Sponsors
-
-[![DigitalOcean Referral Badge](https://web-platforms.sfo2.digitaloceanspaces.com/WWW/Badge%203.svg)](https://www.digitalocean.com/?refcode=4ead8370b905&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge)
 
 
 ![starter-antd-admin-crud-auth-mern-crud-auth](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/opp4yj177dizyaosah0o.png)
@@ -35,7 +31,7 @@ password : admin123`
 ```
 ## Setup backend
 
-1) just create MongoDB Atlas accout database url 
+1) just create MongoDB Atlas account database url 
 2) change this file name .variables.env.tmp to  .variables.env
 3) open  .variables.env and paste your MongoDB url here :  DATABASE=your-mongodb-url
 4) npm install
@@ -44,7 +40,7 @@ password : admin123`
 ## Setup frontend
 1) cd frontend 
 2) npm install
-3) change api config to loaclhost in this : src/frontend/src/config/serverApiConfig.js
+3) change api config to localhost in this : src/frontend/src/config/serverApiConfig.js
  
 
 ## start server

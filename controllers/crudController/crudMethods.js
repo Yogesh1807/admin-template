@@ -159,15 +159,20 @@ exports.list = async (Model, req, res) => {
   const skip = page * limit - limit;
   try {
     //  Query the database for a list of all results
-    const resultsPromise = Model.find()
+    const resultsPromise = await Model.find()
       .skip(skip)
       .limit(limit)
       .sort({ created: "desc" })
       .populate();
     // Counting the total documents
-    const countPromise = Model.count();
+    const countPromise = await Model.countDocuments();
     // Resolving both promises
-    const [result, count] = await Promise.all([resultsPromise, countPromise]);
+    const [result, count] = await Promise.allSettled([
+      resultsPromise,
+      countPromise,
+    ]);
+    console.log(result);
+    console.log(count);
     // Calculating total pages
     const pages = Math.ceil(count / limit);
 
@@ -188,7 +193,7 @@ exports.list = async (Model, req, res) => {
         message: "Collection is Empty",
       });
     }
-  } catch {
+  } catch (er) {
     return res
       .status(500)
       .json({ success: false, result: [], message: "Oops there is an Error" });

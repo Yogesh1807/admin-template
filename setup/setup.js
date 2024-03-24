@@ -4,7 +4,7 @@ const fs = require("fs");
 const mongoose = require("mongoose");
 mongoose.connect(process.env.DATABASE);
 mongoose.Promise = global.Promise; // Tell Mongoose to use ES6 promises
-
+// mongoose.connect("mongodb://127.0.0.1/adminTemplate");
 // import all of our models - they need to be imported only once
 
 // const patients = JSON.parse(
@@ -41,9 +41,9 @@ async function createAdmin() {
     const passwordHash = newAdmin.generateHash("123456");
 
     await new Admin({
-      email: "admin@demo.com",
+      email: "admin@admin.com",
       password: passwordHash,
-      name: "admin",
+      name: "adminTemplate",
       surname: "demo",
     }).save();
     console.log("👍👍👍👍👍👍👍👍 Admin created : Done!");

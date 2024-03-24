@@ -1,9 +1,9 @@
-import { parse } from "querystring";
-function getPageQuery() {
-  parse(window.location.href.split("?")[1]);
-}
+// import { parse } from "querystring";
+// function getPageQuery() {
+//   parse(window.location.href.split("?")[1]);
+// }
 
-/* 
+/*
  To get nested object properties.
  admin = {
     location: {
@@ -45,7 +45,7 @@ Object.byString = function (o, s) {
   return o;
 };
 
-/* 
+/*
  To check only if a property exists, without getting its value. It similer get function.
 */
 export function has(obj, key) {
@@ -58,7 +58,7 @@ export function has(obj, key) {
   });
 }
 
-/* 
+/*
  convert indexes to properties
 */
 export function valueByString(obj, string, devider) {
@@ -149,4 +149,4 @@ export function bindValue(obj, parentElement) {
   });
 }
 
-export default getPageQuery;
+// export default getPageQuery;

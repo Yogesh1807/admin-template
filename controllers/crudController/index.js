@@ -22,7 +22,7 @@ exports.crudController = (modelName) => {
   };
 
   methods.list = async (req, res) => {
-    crudMethods.list(Model, req, res);
+    await crudMethods.list(Model, req, res);
   };
 
   methods.search = async (req, res) => {

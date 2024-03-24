@@ -1,4 +1,4 @@
-import { API_BASE_URL, ACCESS_TOKEN_NAME } from "@/config/serverApiConfig";
+import { ACCESS_TOKEN_NAME } from "@/config/serverApiConfig";
 
 import axios from "axios";
 import errorHandler from "@/request/errorHandler";
@@ -10,7 +10,7 @@ import { getCookie, setCookie, deleteCookie } from "./cookie";
 export const login = async (loginAdminData) => {
   try {
     const response = await axios.post(
-      API_BASE_URL + `login?timestamp=${new Date().getTime()}`,
+      process.env.API_BASE_URL + `login?timestamp=${new Date().getTime()}`,
       loginAdminData
     );
     token.set(response.data.result.token);

@@ -13,14 +13,7 @@ if (major < 10 || (major === 10 && minor <= 0)) {
 require("dotenv").config({ path: ".variables.env" });
 
 // Connect to our Database and handle any bad connections
-// mongoose.connect(process.env.DATABASE);
-
-mongoose.connect(process.env.DATABASE, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-  useFindAndModify: false,
-  useCreateIndex: true,
-});
+mongoose.connect(process.env.DATABASE);
 mongoose.Promise = global.Promise; // Tell Mongoose to use ES6 promises
 mongoose.connection.on("error", (err) => {
   console.error(`🚫 Error → : ${err.message}`);

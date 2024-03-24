@@ -157,11 +157,9 @@ export default function DataTable({ config, DropDownRowMenu, AddNewItem }) {
   };
 
   const rowSelection = {
-    selectedRowKeys,
     onChange: onSelectChange,
     hideSelectAll: true,
     columnWidth: 0,
-
     renderCell: handelColorRow,
     selectedRowKeys: selectedRowKeys,
   };

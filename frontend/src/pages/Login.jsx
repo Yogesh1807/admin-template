@@ -5,7 +5,7 @@ import { UserOutlined, LockOutlined } from "@ant-design/icons";
 
 import { login } from "@/redux/auth/actions";
 import { useDispatch, useSelector } from "react-redux";
-import { auth } from "@/redux/auth/actions";
+// import { auth } from "@/redux/auth/actions";
 import { selectAuth } from "@/redux/auth/selectors";
 const { Content, Footer } = Layout;
 
@@ -64,7 +64,7 @@ const LoginPage = () => {
                   >
                     <Input
                       prefix={<UserOutlined className="site-form-item-icon" />}
-                      placeholder="admin@demo.com"
+                      placeholder="admin@admin.com"
                       autoComplete="off"
                     />
                   </Form.Item>
@@ -113,7 +113,6 @@ const LoginPage = () => {
 
         <Footer style={{ textAlign: "center" }}>
           Open Source CRM based on AntD & React ©2024 Created by Yogesh Satale
-          Lalami
         </Footer>
       </Layout>
     </>

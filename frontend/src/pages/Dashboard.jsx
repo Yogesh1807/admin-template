@@ -54,7 +54,7 @@ const TopCard = ({ title, tagContent, tagColor, prefix }) => {
 const PreviewState = ({ tag, color, value }) => {
   let colorCode = "#000";
   switch (color) {
-    case "bleu":
+    case "blue":
       colorCode = "#1890ff";
       break;
     case "green":
